@@ -1,6 +1,6 @@
 ---
 languages: javascript
-tags: math, oo
+tags: math, oo, todo
 ---
 
 # Regex with JavaScript
@@ -18,6 +18,3 @@ learn  # runs only in the terminal
 learn -b # runs also in the browser
 ```
 
-## Resources
-
-* []()
