@@ -4,15 +4,15 @@ describe('#startEnd',function() {
   it("returns an array of matches for 'hello' and 'world'",function() {
     var firstString = "{START} hello {END} cruel {START} world {END}";
     var match = startEnd(firstString)
-    expect(match[0]).toEqual("hello");
-    expect(match[1]).toEqual("world");
+    expect(match[0]).toEqual("{START} hello {END}");
+    expect(match[1]).toEqual("{START} world {END}");
   });
 
   it("returns an array of matches for 'Mary' and 'little lamb'",function() {
     var firstString = "{START} Mary {END} had a {START} little lamb {END}";
     var match = startEnd(firstString)
-    expect(match[0]).toEqual("Mary");
-    expect(match[1]).toEqual("little lamb");
+    expect(match[0]).toEqual("{START} Mary {END}");
+    expect(match[1]).toEqual("{START} little lamb {END}");
   });
 });
 
@@ -20,7 +20,7 @@ describe("#isDinosaur", function() {
   it("returns true for words containing 'saur'", function() {
     var dinos = ["daemonosaurus", "tarbosaurus", "pachycephalosaur", "supersaurus", "spinosaurus", "sauropod"];
     dinos.forEach(function(dinos) {
-      expect(isDinosaur(dinos)).toEqual(false);
+      expect(isDinosaur(dinos)).toEqual(true);
     });
   });
 
