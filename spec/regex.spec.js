@@ -59,7 +59,7 @@ describe("#matchRaptor", function() {
   it("returns '___ not a raptor' if string doesn't end with raptor", function() {
     var notRaptors = ["raptor", "raptorex", "aquaraptorville", "raptorsaurus"];
     notRaptors.forEach(function(notRaptor) {
-      expect(matchRaptor(notRaptor)).to eq(notRaptor + " isn't a raptor");
+      expect(matchRaptor(notRaptor)).toEqual(notRaptor + " isn't a raptor");
     });
   });
 });
@@ -68,14 +68,14 @@ describe("#matchFeatherLike", function() {
   it("returns the word if it matches 'quill', 'plume', 'feather', or 'fluff'", function() {
     var feathers = ["fancy plume", "it's fluff time", "quest for a quill", "all of the feathers"];
     feathers.forEach(function(feather) {
-      expect(matchFeatherLike(feather)).to eq(feather);
+      expect(matchFeatherLike(feather)).toEqual(feather);
     });
   });
 
   it("returns 'no match found' if it doesn't match a feather-like word", function() {
     var notFeathers = ["quil", "plum", "birds", "birdy", "fluf", "feath"];
     notFeathers.forEach(function(notAFeather) {
-      expect(matchFeatherLike(notAFeather)).to eq("no match found");
+      expect(matchFeatherLike(notAFeather)).toEqual("no match found");
     });    
   });
 });
