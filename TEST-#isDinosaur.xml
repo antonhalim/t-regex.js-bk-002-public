@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="2" errors="0" failures="0" time="0.002" timestamp="2015-05-21T14:46:42">
+		<testcase classname="#isDinosaur" name="returns true for words containing &amp;apos;saur&amp;apos;" time="0.001">
+		</testcase>
+		<testcase classname="#isDinosaur" name="returns false for words not containing &amp;apos;saur&amp;apos;" time="0">
+		</testcase>
+	</testsuite>
+</testsuites>
+
